@@ -5,4 +5,6 @@ public interface Coletavel {
 
     public Coletavel descartar();
 
+    public float usar();
+
 }

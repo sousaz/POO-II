@@ -17,9 +17,5 @@ public class Monstro extends Personagem{
         return this.defesa;
     }
 
-    public void calcularDano(){
-        System.out.println(this.nome+" hmm hmmm hmmm que dano que eu calculei");
-    }
-
 
 }

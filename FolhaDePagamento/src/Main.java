@@ -21,7 +21,7 @@ public class Main {
 //        FolhaPagamento fp = new FolhaPagamento(funcs);
 //        System.out.println("Total da folha: " + fp.gerarFolha());
 
-        Espada espada1 = new Espada("tomaaaa");
+        Espada espada1 = new Espada("tomaaaa", 30);
         Heroi h1 = new Heroi("jarvis", 10, 100, 5);
         Monstro m1 = new Monstro("Zumbi", 40, 200, 50);
 

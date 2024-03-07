@@ -19,21 +19,14 @@ public class Heroi extends Personagem{
         this.item = item;
     }
 
-    private float danoEspada(){
-        if(this.item instanceof  Espada) return 10;
-        return 0;
-    }
-
-    private float curaPocao(){
-        if(this.item instanceof  Pocao) return 30;
-        return 0;
-    }
-
     @Override
     public float atacar() {
 
         System.out.println("O "+ this.nome + " esta atacando");
-        return this.dano + danoEspada();
+        if(this.item instanceof Espada){
+            return this.dano + this.item.usar();
+        }
+        return this.dano;
     }
 
     @Override
@@ -56,8 +49,11 @@ public class Heroi extends Personagem{
         this.item = item.descartar();
     }
 
-    public void curar(){
-        this.hp = curaPocao();
-        System.out.println("Curando...");
+    public float curar(){
+        if(this.item instanceof Pocao){
+            System.out.println("Curando...");
+            return this.item.usar();
+        }
+        return 0;
     }
 }
