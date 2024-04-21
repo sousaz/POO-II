@@ -1,5 +1,5 @@
 package adapterIntregation.interfaces;
 
 public interface XML {
-    public void setFile(String image);
+    public void setFile(String file);
 }

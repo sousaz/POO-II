@@ -7,14 +7,13 @@ public class XMLtoJsonAdapter implements JSON {
     private XML file;
 
     public XMLtoJsonAdapter(XML xml){
-        System.out.println("Connecting the XML/JSON adapter...");
-        this.xml = xml;
+        System.out.println("Converting the XML to JSON...");
+        this.file = xml;
     }
 
 
     @Override
-    public void setFile(String arquivo) {
-        System.out.println("Converting the XML to JSON");
-        file.setFile(arquivo);
+    public void setFile(String file) {
+        System.out.println(file);
     }
 }
