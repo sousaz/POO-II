@@ -20,6 +20,6 @@ public class Main {
                 new CreditHistoryMiddleware()
         );
         server.setMiddleware(middleware);
-        server.checkLoan(user1, loan);
+        server.checkLoan(user2, loan);
     }
 }
